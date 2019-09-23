@@ -12,11 +12,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var factsCollectionView: UICollectionView!
     var refreshControl = UIRefreshControl()
+    var dataLayer = FactsDataLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpScreen()
-        loadData()
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        fetchHomeData()
     }
     
     func setUpScreen() {
@@ -26,10 +28,27 @@ class HomeViewController: UIViewController {
         self.factsCollectionView!.addSubview(refreshControl)
     }
     
-    func loadData() {
-        
+    func fetchHomeData() {
+        self.dataLayer.fetchHomeData {[weak self] (success, error) in
+            LoadingOverlay.shared.hideOverlayView()
+            switch success {
+            case true: do {
+                self?.navigationBarTitleSetup()
+                print(self?.dataLayer.baseModel)
+                }
+            case false : do {
+                if let error = error {
+                    // self.showAlert(title: HomeConstants.errorAlertTitle, desc: error.localizedDescription)
+                }
+                }
+                
+            }
+        }
     }
-    
+    func navigationBarTitleSetup() {
+        guard let title = self.dataLayer.baseModel.title else { return }
+        self.navigationController?.navigationBar.topItem?.title = title
+    }
     @objc func refreshScreen() {
         stopRefreshing()
     }

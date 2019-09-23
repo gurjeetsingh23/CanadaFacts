@@ -16,6 +16,11 @@
 		508C10BA23383F0F00890942 /* CanadaFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10B923383F0F00890942 /* CanadaFactsUITests.swift */; };
 		508C10C8233841FC00890942 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10C7233841FC00890942 /* DetailsViewController.swift */; };
 		508C10CA233845FE00890942 /* FactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10C9233845FE00890942 /* FactsCollectionViewCell.swift */; };
+		508C10CC2338502C00890942 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CB2338502C00890942 /* BaseModel.swift */; };
+		508C10CE2338509100890942 /* RowsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CD2338509100890942 /* RowsModel.swift */; };
+		508C10D0233856C800890942 /* FactsNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CF233856C800890942 /* FactsNetworkLayer.swift */; };
+		508C10D22338590700890942 /* FactsDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D12338590700890942 /* FactsDataLayer.swift */; };
+		508C10D423385B7600890942 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D323385B7600890942 /* LoadingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		508C10BB23383F0F00890942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		508C10C7233841FC00890942 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		508C10C9233845FE00890942 /* FactsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionViewCell.swift; sourceTree = "<group>"; };
+		508C10CB2338502C00890942 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		508C10CD2338509100890942 /* RowsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsModel.swift; sourceTree = "<group>"; };
+		508C10CF233856C800890942 /* FactsNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsNetworkLayer.swift; sourceTree = "<group>"; };
+		508C10D12338590700890942 /* FactsDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDataLayer.swift; sourceTree = "<group>"; };
+		508C10D323385B7600890942 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,11 @@
 				508C10A523383F0F00890942 /* Info.plist */,
 				508C10C7233841FC00890942 /* DetailsViewController.swift */,
 				508C10C9233845FE00890942 /* FactsCollectionViewCell.swift */,
+				508C10CB2338502C00890942 /* BaseModel.swift */,
+				508C10CD2338509100890942 /* RowsModel.swift */,
+				508C10CF233856C800890942 /* FactsNetworkLayer.swift */,
+				508C10D12338590700890942 /* FactsDataLayer.swift */,
+				508C10D323385B7600890942 /* LoadingOverlay.swift */,
 			);
 			path = CanadaFacts;
 			sourceTree = "<group>";
@@ -264,8 +279,13 @@
 			files = (
 				508C10CA233845FE00890942 /* FactsCollectionViewCell.swift in Sources */,
 				508C109C23383F0D00890942 /* HomeViewController.swift in Sources */,
+				508C10CE2338509100890942 /* RowsModel.swift in Sources */,
 				508C109A23383F0D00890942 /* AppDelegate.swift in Sources */,
 				508C10C8233841FC00890942 /* DetailsViewController.swift in Sources */,
+				508C10D0233856C800890942 /* FactsNetworkLayer.swift in Sources */,
+				508C10CC2338502C00890942 /* BaseModel.swift in Sources */,
+				508C10D22338590700890942 /* FactsDataLayer.swift in Sources */,
+				508C10D423385B7600890942 /* LoadingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
