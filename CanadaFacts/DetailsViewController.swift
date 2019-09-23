@@ -10,8 +10,19 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var detailsImage: UIImageView!
+    var image : UIImage?
+    var descriptionText : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let image = image{
+            detailsImage.image = image
+        }
+        if let desc = descriptionText {
+            detailsLabel.text = desc
+        }
     }
 
 }

@@ -21,6 +21,9 @@
 		508C10D0233856C800890942 /* FactsNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CF233856C800890942 /* FactsNetworkLayer.swift */; };
 		508C10D22338590700890942 /* FactsDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D12338590700890942 /* FactsDataLayer.swift */; };
 		508C10D423385B7600890942 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D323385B7600890942 /* LoadingOverlay.swift */; };
+		508C10D623385F5600890942 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508C10D523385F5600890942 /* SDWebImage.framework */; };
+		508C10D723385F5600890942 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 508C10D523385F5600890942 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		508C10DA233877F200890942 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D9233877F200890942 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,20 @@
 			remoteInfo = CanadaFacts;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		508C10D823385F5600890942 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				508C10D723385F5600890942 /* SDWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		508C109623383F0D00890942 /* CanadaFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +78,8 @@
 		508C10CF233856C800890942 /* FactsNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsNetworkLayer.swift; sourceTree = "<group>"; };
 		508C10D12338590700890942 /* FactsDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDataLayer.swift; sourceTree = "<group>"; };
 		508C10D323385B7600890942 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		508C10D523385F5600890942 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		508C10D9233877F200890942 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508C10D623385F5600890942 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +111,7 @@
 		508C108D23383F0D00890942 = {
 			isa = PBXGroup;
 			children = (
+				508C10D523385F5600890942 /* SDWebImage.framework */,
 				508C109823383F0D00890942 /* CanadaFacts */,
 				508C10AD23383F0F00890942 /* CanadaFactsTests */,
 				508C10B823383F0F00890942 /* CanadaFactsUITests */,
@@ -124,6 +145,7 @@
 				508C10CF233856C800890942 /* FactsNetworkLayer.swift */,
 				508C10D12338590700890942 /* FactsDataLayer.swift */,
 				508C10D323385B7600890942 /* LoadingOverlay.swift */,
+				508C10D9233877F200890942 /* Utility.swift */,
 			);
 			path = CanadaFacts;
 			sourceTree = "<group>";
@@ -156,6 +178,7 @@
 				508C109223383F0D00890942 /* Sources */,
 				508C109323383F0D00890942 /* Frameworks */,
 				508C109423383F0D00890942 /* Resources */,
+				508C10D823385F5600890942 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508C10DA233877F200890942 /* Utility.swift in Sources */,
 				508C10CA233845FE00890942 /* FactsCollectionViewCell.swift in Sources */,
 				508C109C23383F0D00890942 /* HomeViewController.swift in Sources */,
 				508C10CE2338509100890942 /* RowsModel.swift in Sources */,
@@ -462,6 +486,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F4N6GWMSA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CanadaFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +508,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F4N6GWMSA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CanadaFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

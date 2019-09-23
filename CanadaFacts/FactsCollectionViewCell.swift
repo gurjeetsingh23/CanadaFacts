@@ -9,12 +9,9 @@
 import UIKit
 
 class FactsCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-//        avatar.isUserInteractionEnabled = true
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
-//        tapGestureRecognizer.delegate = self
-//        avatar.addGestureRecognizer(tapGestureRecognizer)
     }
 }

@@ -44,20 +44,20 @@ class FactsDataLayer {
     }
     
     //returing the heading label to view controller
-    func returnHeadingLabel(indexpath: Int) -> String {
-        guard let headingLabel = self.baseModel.rows?[indexpath].title else { return ""}
+    func returnHeadingLabel(indexpath: Int) -> String? {
+        guard let headingLabel = self.baseModel.rows?[indexpath].title else { return nil}
         return headingLabel
     }
     
     //returing the description label to view controller
-    func returnDescriptionLabel(indexpath: Int) -> String {
-        guard let descriptionLabel = self.baseModel.rows?[indexpath].description else { return ""}
+    func returnDescriptionLabel(indexpath: Int) -> String? {
+        guard let descriptionLabel = self.baseModel.rows?[indexpath].description else { return nil}
         return descriptionLabel
     }
     
     //returing the imageUrl String to view controller
-    func returnImage(indexpath: Int) -> String {
-        guard let imageUrl = self.baseModel.rows?[indexpath].imageHref else { return ""}
+    func returnImage(indexpath: Int) -> String? {
+        guard let imageUrl = self.baseModel.rows?[indexpath].imageHref else { return nil}
         return imageUrl
     }
     

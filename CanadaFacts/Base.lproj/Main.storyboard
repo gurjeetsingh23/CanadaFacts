@@ -32,7 +32,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FactsCollectionViewCell" reuseIdentifier="FactsCollectionViewCell" id="K3m-J9-PLX" customClass="FactsCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FactsCollectionViewCell" reuseIdentifier="FactsCollectionViewCell" id="K3m-J9-PLX" customClass="FactsCollectionViewCell" customModule="CanadaFacts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -81,6 +81,10 @@
                                             <constraint firstAttribute="trailing" secondItem="fSA-8y-HIK" secondAttribute="trailing" constant="2" id="mEj-aa-d35"/>
                                         </constraints>
                                         <size key="customSize" width="124" height="167"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="nxc-nT-JJ4" id="16Z-ZI-fDl"/>
+                                            <outlet property="titleLabel" destination="YNk-FZ-fg6" id="u0d-cC-Cqc"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -109,7 +113,7 @@
         <!--Details View Controller-->
         <scene sceneID="z6R-PQ-lwn">
             <objects>
-                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aU4-Ak-50N" customClass="DetailsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aU4-Ak-50N" customClass="DetailsViewController" customModule="CanadaFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h7q-eX-BGl"/>
                         <viewControllerLayoutGuide type="bottom" id="E6K-aV-qQC"/>
@@ -181,6 +185,10 @@
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="detailsImage" destination="OoQ-Rw-EXz" id="Ua8-mB-VGe"/>
+                        <outlet property="detailsLabel" destination="dMJ-i7-HGd" id="ZDU-GQ-5gr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jN9-x0-rxw" sceneMemberID="firstResponder"/>
             </objects>
