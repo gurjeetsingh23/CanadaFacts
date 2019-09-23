@@ -2,7 +2,7 @@
 //  CanadaFactsTests.swift
 //  CanadaFactsTests
 //
-//  Created by Julka, Gurjeet (Cognizant) on 23/9/19.
+//  Created by Julka, Gurjeet on 23/9/19.
 //  Copyright © 2019 Gurjeet Singh Julka. All rights reserved.
 //
 
