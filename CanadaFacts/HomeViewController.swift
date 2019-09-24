@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     var refreshControl = UIRefreshControl()
     var dataLayer = FactsDataLayer()
     var imagesArray = [UIImage?]()
+    var computeArray = [UIImage?](repeating: nil, count:1000)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,24 +79,29 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = factsCollectionView.dequeueReusableCell(withReuseIdentifier: "FactsCollectionViewCell", for: indexPath) as! FactsCollectionViewCell
         cell.titleLabel.text =  self.dataLayer.returnHeadingLabel(indexpath: indexPath.row)
+        cell.imageView.image = UIImage(named: "placeholder")
+        computeArray[indexPath.row] = nil
         if let imageURL = self.dataLayer.returnImage(indexpath: indexPath.row) {
-            let urlForImage = URL(string: imageURL)
-            cell.imageView.sd_setImage(with: urlForImage, placeholderImage: UIImage(named: "placeholder"), options: SDWebImageOptions(rawValue: 0), completed: { image, _, _, _ in
+          //  let urlForImage = URL(string: imageURL)
+            //cell.imageView.sd_setImage(with: urlForImage, placeholderImage: UIImage(named: "placeholder"), options: SDWebImageOptions(rawValue: 0), completed:
+                
+                cell.imageView.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder")) { (image, _, _, _) in
                 if  let image = image {
                  //   cell.imageView.image = image
                     self.imagesArray.append(image)
+                    self.computeArray[indexPath.row] = image
                     DispatchQueue.main.async(execute: {
                         cell.imageView.image = image
                     })
                     self.factsCollectionView.collectionViewLayout.invalidateLayout()
                 }
-            })
+            }
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if imagesArray.count > 0, indexPath.row < imagesArray.count, let image = imagesArray[indexPath.row] {
+        if computeArray.count > 0, indexPath.row < computeArray.count, let image = computeArray[indexPath.row] {
             return CGSize(width: min(image.size.width, collectionView.frame.size.width), height: image.size.height)
         }
         let width = self.factsCollectionView.frame.size.width
@@ -106,7 +112,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
         controller.descriptionText = self.dataLayer.returnDescriptionLabel(indexpath: indexPath.row)
-        controller.image = imagesArray[indexPath.row]
+        controller.image = computeArray[indexPath.row]
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

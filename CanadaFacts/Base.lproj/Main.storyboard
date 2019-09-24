@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-of-wbd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="g4S-S3-6eu">
                                     <size key="itemSize" width="124" height="167"/>
@@ -97,7 +97,7 @@
                             <constraint firstItem="Go6-of-wbd" firstAttribute="top" secondItem="aA6-Dd-VgQ" secondAttribute="top" id="16i-rD-7sI"/>
                             <constraint firstItem="Go6-of-wbd" firstAttribute="leading" secondItem="aA6-Dd-VgQ" secondAttribute="leading" id="5fA-oo-wnm"/>
                             <constraint firstItem="Go6-of-wbd" firstAttribute="trailing" secondItem="aA6-Dd-VgQ" secondAttribute="trailing" id="a3k-Ck-Ope"/>
-                            <constraint firstItem="Go6-of-wbd" firstAttribute="bottom" secondItem="VHr-Gr-KXB" secondAttribute="top" id="mV2-RT-Ufj"/>
+                            <constraint firstItem="Go6-of-wbd" firstAttribute="bottom" secondItem="aA6-Dd-VgQ" secondAttribute="bottom" id="mV2-RT-Ufj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HIu-fg-k94"/>
                     </view>
@@ -165,22 +165,22 @@
                                 <exclude reference="5ob-uu-WE0"/>
                                 <exclude reference="BgH-wu-qHC"/>
                                 <exclude reference="aWm-5a-NW2"/>
-                                <exclude reference="qBk-zZ-qIY"/>
                                 <exclude reference="1Rd-hx-slR"/>
+                                <exclude reference="qBk-zZ-qIY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="5ob-uu-WE0"/>
+                                <exclude reference="Adj-OD-6Bo"/>
+                                <include reference="BgH-wu-qHC"/>
+                                <include reference="aWm-5a-NW2"/>
                                 <exclude reference="tAv-BP-nyw"/>
                                 <exclude reference="zhQ-cd-m0X"/>
-                                <include reference="BgH-wu-qHC"/>
-                                <exclude reference="Adj-OD-6Bo"/>
-                                <include reference="aWm-5a-NW2"/>
-                                <exclude reference="UN8-KO-km4"/>
-                                <exclude reference="qMJ-IO-HQl"/>
-                                <include reference="qBk-zZ-qIY"/>
                                 <include reference="1Rd-hx-slR"/>
+                                <exclude reference="UN8-KO-km4"/>
+                                <include reference="qBk-zZ-qIY"/>
+                                <exclude reference="qMJ-IO-HQl"/>
                             </mask>
                         </variation>
                     </view>
