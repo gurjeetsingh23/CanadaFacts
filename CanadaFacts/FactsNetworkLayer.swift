@@ -24,30 +24,26 @@ class FactsNetworkLayer {
             
             // encoding the data received to UTF8
             let encodingString = String(data: data!, encoding: .isoLatin1)
-            let dataUsingTF8: Data? = encodingString?.data(using: .utf8)
+            let dataUsingUTF8: Data? = encodingString?.data(using: .utf8)
             var responseDictionary: [AnyHashable: Any]?
-            if let dataUsingTF8 = dataUsingTF8 {
+            if let dataUsingUTF8 = dataUsingUTF8 {
                 do {
-                    responseDictionary = try JSONSerialization.jsonObject(with: dataUsingTF8, options: .mutableContainers) as? [AnyHashable: Any]
+                    responseDictionary = try JSONSerialization.jsonObject(with: dataUsingUTF8, options: .mutableContainers) as? [AnyHashable: Any]
                 } catch {
                     print("Error occured while Json serialization")
                 }
             }
             do {
-                guard let respDict = responseDictionary else {return}
+                guard let respDict = responseDictionary else { return }
                 let jsonData = try JSONSerialization.data(withJSONObject: respDict, options: .prettyPrinted)
                 let dataObj: BaseModel
+                //decoding the data
                 let decoder = JSONDecoder()
-                
-                //adding the decoded data to Model Class
                 dataObj =  try decoder.decode(BaseModel.self, from: jsonData as Data)
                 completionHandler(ResultType.success(data: dataObj))
-                
             } catch {
                 completionHandler(ResultType.error(error: error))
-                
             }
-            
             }
         task.resume()
         

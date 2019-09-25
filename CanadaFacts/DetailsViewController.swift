@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var detailsImage: UIImageView!
     var image : UIImage?
     var descriptionText : String?
+    var headingTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class DetailsViewController: UIViewController {
         if let desc = descriptionText {
             detailsLabel.text = desc
         }
+         // self.navigationController?.navigationBar.topItem?.title = headingTitle
     }
 
 }

@@ -12,6 +12,7 @@ import XCTest
 class CanadaFactsTests: XCTestCase {
     let homeViewController = HomeViewController()
     let datalayer = FactsDataLayer()
+    let networkLayer = FactsNetworkLayer()
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,17 +20,34 @@ class CanadaFactsTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testNetworkLayer() {
+        let promise = expectation(description: "Data fetched from network")
+        networkLayer.getHomeData { (result: ResultType) in
+            switch result {
+            case .success:
+                   XCTAssertTrue(true)
+                    promise.fulfill()
+            case .error(let error):
+                XCTFail("Error: \(error.localizedDescription)")
+                return
+            }
+        }
+        wait(for: [promise], timeout: 10.0)
+    }
+    
     func testDataLayer() {
-        let expectation = XCTestExpectation (description: "Data should be fetched")
+        let promise = expectation (description: "Data fetched by Data Layer")
         datalayer.fetchHomeData { success, error  in
             if success {
                 XCTAssertTrue(true)
-            } else if error != nil {
-                XCTAssertFalse(true)
+                promise.fulfill()
+            } else if let error = error {
+                XCTFail("Error: \(error.localizedDescription)")
+                return
             }
-            expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [promise], timeout: 10.0)
     }
 
     func testPerformanceExample() {

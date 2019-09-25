@@ -65,11 +65,6 @@
                                                         <constraint firstAttribute="bottom" secondItem="YNk-FZ-fg6" secondAttribute="bottom" id="oAq-iP-e8T"/>
                                                         <constraint firstItem="nxc-nT-JJ4" firstAttribute="top" secondItem="fSA-8y-HIK" secondAttribute="top" id="ts6-f2-Uz8"/>
                                                     </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
-                                                            <real key="value" value="8"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                         </view>
@@ -128,8 +123,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G46-0E-aFM" userLabel="TextContainer">
                                 <rect key="frame" x="8" y="398.5" width="398" height="497.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dMJ-i7-HGd">
-                                        <rect key="frame" x="16" y="37" width="366" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dMJ-i7-HGd">
+                                        <rect key="frame" x="16" y="37" width="366" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact">

@@ -13,7 +13,6 @@ struct Rows: Codable {
     let imageHref: String?
     
     enum CodingKeys: String, CodingKey {
-        
         case title
         case description
         case imageHref
