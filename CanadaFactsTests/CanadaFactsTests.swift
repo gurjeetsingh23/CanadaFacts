@@ -26,7 +26,6 @@ class CanadaFactsTests: XCTestCase {
         networkLayer.getHomeData { result in
             switch result {
             case .success:
-                   XCTAssertTrue(true)
                     promise.fulfill()
             case .failure(let error):
                 XCTFail("Error: \(error.localizedDescription)")
@@ -40,7 +39,6 @@ class CanadaFactsTests: XCTestCase {
         let promise = expectation (description: "Data fetched by Data Layer")
         datalayer.fetchHomeData { success, error  in
             if success {
-                XCTAssertTrue(true)
                 promise.fulfill()
             } else if let error = error {
                 XCTFail("Error: \(error.localizedDescription)")

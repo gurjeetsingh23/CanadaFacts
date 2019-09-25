@@ -26,9 +26,10 @@ class CanadaFactsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAppFlow() {
+        let app = XCUIApplication()
+        app.collectionViews.children(matching: .cell).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.tap()
+        app.navigationBars["CanadaFacts.DetailsView"].buttons["About Canada"].tap()
     }
 
 }

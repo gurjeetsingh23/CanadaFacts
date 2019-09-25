@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		508C109A23383F0D00890942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C109923383F0D00890942 /* AppDelegate.swift */; };
-		508C109C23383F0D00890942 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C109B23383F0D00890942 /* HomeViewController.swift */; };
 		508C109F23383F0D00890942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508C109D23383F0D00890942 /* Main.storyboard */; };
 		508C10A123383F0F00890942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508C10A023383F0F00890942 /* Assets.xcassets */; };
 		508C10A423383F0F00890942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508C10A223383F0F00890942 /* LaunchScreen.storyboard */; };
 		508C10AF23383F0F00890942 /* CanadaFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10AE23383F0F00890942 /* CanadaFactsTests.swift */; };
 		508C10BA23383F0F00890942 /* CanadaFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10B923383F0F00890942 /* CanadaFactsUITests.swift */; };
-		508C10C8233841FC00890942 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10C7233841FC00890942 /* DetailsViewController.swift */; };
-		508C10CA233845FE00890942 /* FactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10C9233845FE00890942 /* FactsCollectionViewCell.swift */; };
-		508C10CC2338502C00890942 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CB2338502C00890942 /* BaseModel.swift */; };
-		508C10CE2338509100890942 /* RowsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CD2338509100890942 /* RowsModel.swift */; };
-		508C10D0233856C800890942 /* FactsNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10CF233856C800890942 /* FactsNetworkLayer.swift */; };
-		508C10D22338590700890942 /* FactsDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D12338590700890942 /* FactsDataLayer.swift */; };
-		508C10D423385B7600890942 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D323385B7600890942 /* LoadingOverlay.swift */; };
-		508C10D623385F5600890942 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508C10D523385F5600890942 /* SDWebImage.framework */; };
-		508C10D723385F5600890942 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 508C10D523385F5600890942 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		508C10DA233877F200890942 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C10D9233877F200890942 /* Utility.swift */; };
+		50CE138A233B3E990034EE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1389233B3E990034EE00 /* AppDelegate.swift */; };
+		50CE139A233B3EC90034EE00 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE138C233B3EC80034EE00 /* LoadingOverlay.swift */; };
+		50CE139B233B3EC90034EE00 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE138D233B3EC80034EE00 /* Utility.swift */; };
+		50CE139C233B3EC90034EE00 /* FactsNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE138F233B3EC80034EE00 /* FactsNetworkLayer.swift */; };
+		50CE139D233B3EC90034EE00 /* RowsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1391233B3EC80034EE00 /* RowsModel.swift */; };
+		50CE139E233B3EC90034EE00 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1392233B3EC80034EE00 /* BaseModel.swift */; };
+		50CE139F233B3EC90034EE00 /* FactsDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1394233B3EC80034EE00 /* FactsDataLayer.swift */; };
+		50CE13A0233B3EC90034EE00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1396233B3EC80034EE00 /* HomeViewController.swift */; };
+		50CE13A1233B3EC90034EE00 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1397233B3EC80034EE00 /* DetailsViewController.swift */; };
+		50CE13A2233B3EC90034EE00 /* FactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE1399233B3EC90034EE00 /* FactsCollectionViewCell.swift */; };
+		50CE13A6233B3FF30034EE00 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CE13A5233B3FF30034EE00 /* SDWebImage.framework */; };
+		50CE13A7233B3FF30034EE00 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50CE13A5233B3FF30034EE00 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				508C10D723385F5600890942 /* SDWebImage.framework in Embed Frameworks */,
+				50CE13A7233B3FF30034EE00 /* SDWebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,8 +59,6 @@
 
 /* Begin PBXFileReference section */
 		508C109623383F0D00890942 /* CanadaFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		508C109923383F0D00890942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		508C109B23383F0D00890942 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		508C109E23383F0D00890942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		508C10A023383F0F00890942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		508C10A323383F0F00890942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,15 +69,17 @@
 		508C10B523383F0F00890942 /* CanadaFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		508C10B923383F0F00890942 /* CanadaFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaFactsUITests.swift; sourceTree = "<group>"; };
 		508C10BB23383F0F00890942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		508C10C7233841FC00890942 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		508C10C9233845FE00890942 /* FactsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionViewCell.swift; sourceTree = "<group>"; };
-		508C10CB2338502C00890942 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		508C10CD2338509100890942 /* RowsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsModel.swift; sourceTree = "<group>"; };
-		508C10CF233856C800890942 /* FactsNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsNetworkLayer.swift; sourceTree = "<group>"; };
-		508C10D12338590700890942 /* FactsDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsDataLayer.swift; sourceTree = "<group>"; };
-		508C10D323385B7600890942 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
-		508C10D523385F5600890942 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
-		508C10D9233877F200890942 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		50CE1389233B3E990034EE00 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50CE138C233B3EC80034EE00 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		50CE138D233B3EC80034EE00 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		50CE138F233B3EC80034EE00 /* FactsNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsNetworkLayer.swift; sourceTree = "<group>"; };
+		50CE1391233B3EC80034EE00 /* RowsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowsModel.swift; sourceTree = "<group>"; };
+		50CE1392233B3EC80034EE00 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		50CE1394233B3EC80034EE00 /* FactsDataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsDataLayer.swift; sourceTree = "<group>"; };
+		50CE1396233B3EC80034EE00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50CE1397233B3EC80034EE00 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		50CE1399233B3EC90034EE00 /* FactsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactsCollectionViewCell.swift; sourceTree = "<group>"; };
+		50CE13A5233B3FF30034EE00 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				508C10D623385F5600890942 /* SDWebImage.framework in Frameworks */,
+				50CE13A6233B3FF30034EE00 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 		508C108D23383F0D00890942 = {
 			isa = PBXGroup;
 			children = (
-				508C10D523385F5600890942 /* SDWebImage.framework */,
+				50CE13A4233B3F520034EE00 /* Framework */,
 				508C109823383F0D00890942 /* CanadaFacts */,
 				508C10AD23383F0F00890942 /* CanadaFactsTests */,
 				508C10B823383F0F00890942 /* CanadaFactsUITests */,
@@ -132,20 +132,16 @@
 		508C109823383F0D00890942 /* CanadaFacts */ = {
 			isa = PBXGroup;
 			children = (
-				508C109923383F0D00890942 /* AppDelegate.swift */,
-				508C109B23383F0D00890942 /* HomeViewController.swift */,
-				508C109D23383F0D00890942 /* Main.storyboard */,
+				50CE13A3233B3F0A0034EE00 /* Storyboard */,
+				50CE1388233B3E990034EE00 /* AppDelegate */,
+				50CE1398233B3EC90034EE00 /* CollectionCell */,
+				50CE138B233B3EC80034EE00 /* Common */,
+				50CE1393233B3EC80034EE00 /* DataLayer */,
+				50CE1390233B3EC80034EE00 /* ModelClasses */,
+				50CE138E233B3EC80034EE00 /* NetworkLayer */,
+				50CE1395233B3EC80034EE00 /* View */,
 				508C10A023383F0F00890942 /* Assets.xcassets */,
-				508C10A223383F0F00890942 /* LaunchScreen.storyboard */,
 				508C10A523383F0F00890942 /* Info.plist */,
-				508C10C7233841FC00890942 /* DetailsViewController.swift */,
-				508C10C9233845FE00890942 /* FactsCollectionViewCell.swift */,
-				508C10CB2338502C00890942 /* BaseModel.swift */,
-				508C10CD2338509100890942 /* RowsModel.swift */,
-				508C10CF233856C800890942 /* FactsNetworkLayer.swift */,
-				508C10D12338590700890942 /* FactsDataLayer.swift */,
-				508C10D323385B7600890942 /* LoadingOverlay.swift */,
-				508C10D9233877F200890942 /* Utility.swift */,
 			);
 			path = CanadaFacts;
 			sourceTree = "<group>";
@@ -166,6 +162,82 @@
 				508C10BB23383F0F00890942 /* Info.plist */,
 			);
 			path = CanadaFactsUITests;
+			sourceTree = "<group>";
+		};
+		50CE1388233B3E990034EE00 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				50CE1389233B3E990034EE00 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		50CE138B233B3EC80034EE00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				50CE138C233B3EC80034EE00 /* LoadingOverlay.swift */,
+				50CE138D233B3EC80034EE00 /* Utility.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		50CE138E233B3EC80034EE00 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				50CE138F233B3EC80034EE00 /* FactsNetworkLayer.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		50CE1390233B3EC80034EE00 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				50CE1391233B3EC80034EE00 /* RowsModel.swift */,
+				50CE1392233B3EC80034EE00 /* BaseModel.swift */,
+			);
+			path = ModelClasses;
+			sourceTree = "<group>";
+		};
+		50CE1393233B3EC80034EE00 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				50CE1394233B3EC80034EE00 /* FactsDataLayer.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		50CE1395233B3EC80034EE00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50CE1396233B3EC80034EE00 /* HomeViewController.swift */,
+				50CE1397233B3EC80034EE00 /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50CE1398233B3EC90034EE00 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				50CE1399233B3EC90034EE00 /* FactsCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		50CE13A3233B3F0A0034EE00 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				508C109D23383F0D00890942 /* Main.storyboard */,
+				508C10A223383F0F00890942 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		50CE13A4233B3F520034EE00 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				50CE13A5233B3FF30034EE00 /* SDWebImage.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,16 +372,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				508C10DA233877F200890942 /* Utility.swift in Sources */,
-				508C10CA233845FE00890942 /* FactsCollectionViewCell.swift in Sources */,
-				508C109C23383F0D00890942 /* HomeViewController.swift in Sources */,
-				508C10CE2338509100890942 /* RowsModel.swift in Sources */,
-				508C109A23383F0D00890942 /* AppDelegate.swift in Sources */,
-				508C10C8233841FC00890942 /* DetailsViewController.swift in Sources */,
-				508C10D0233856C800890942 /* FactsNetworkLayer.swift in Sources */,
-				508C10CC2338502C00890942 /* BaseModel.swift in Sources */,
-				508C10D22338590700890942 /* FactsDataLayer.swift in Sources */,
-				508C10D423385B7600890942 /* LoadingOverlay.swift in Sources */,
+				50CE13A2233B3EC90034EE00 /* FactsCollectionViewCell.swift in Sources */,
+				50CE139C233B3EC90034EE00 /* FactsNetworkLayer.swift in Sources */,
+				50CE139B233B3EC90034EE00 /* Utility.swift in Sources */,
+				50CE139F233B3EC90034EE00 /* FactsDataLayer.swift in Sources */,
+				50CE13A0233B3EC90034EE00 /* HomeViewController.swift in Sources */,
+				50CE139D233B3EC90034EE00 /* RowsModel.swift in Sources */,
+				50CE139E233B3EC90034EE00 /* BaseModel.swift in Sources */,
+				50CE138A233B3E990034EE00 /* AppDelegate.swift in Sources */,
+				50CE139A233B3EC90034EE00 /* LoadingOverlay.swift in Sources */,
+				50CE13A1233B3EC90034EE00 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +561,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Framework",
 				);
 				INFOPLIST_FILE = CanadaFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -512,6 +585,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Framework",
 				);
 				INFOPLIST_FILE = CanadaFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
