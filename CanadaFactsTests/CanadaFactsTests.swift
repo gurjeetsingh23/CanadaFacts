@@ -23,12 +23,12 @@ class CanadaFactsTests: XCTestCase {
     
     func testNetworkLayer() {
         let promise = expectation(description: "Data fetched from network")
-        networkLayer.getHomeData { (result: ResultType) in
+        networkLayer.getHomeData { result in
             switch result {
             case .success:
                    XCTAssertTrue(true)
                     promise.fulfill()
-            case .error(let error):
+            case .failure(let error):
                 XCTFail("Error: \(error.localizedDescription)")
                 return
             }

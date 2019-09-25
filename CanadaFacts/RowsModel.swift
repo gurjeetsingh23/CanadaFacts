@@ -7,7 +7,9 @@
 //
 
 import Foundation
+
 struct Rows: Codable {
+    
     let title: String?
     let description: String?
     let imageHref: String?
@@ -17,6 +19,7 @@ struct Rows: Codable {
         case description
         case imageHref
     }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decodeIfPresent(String.self, forKey: .title)

@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var detailsImage: UIImageView!
     var image : UIImage?
@@ -18,13 +18,15 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let image = image{
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let image = image {
             detailsImage.image = image
         }
         if let desc = descriptionText {
             detailsLabel.text = desc
         }
-         // self.navigationController?.navigationBar.topItem?.title = headingTitle
     }
-
+    
 }

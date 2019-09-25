@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJG-38-qQm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cJG-38-qQm">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +23,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-of-wbd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="g4S-S3-6eu">
                                     <size key="itemSize" width="124" height="167"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -42,7 +41,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSA-8y-HIK">
                                                     <rect key="frame" x="2" y="2" width="120" height="163"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nxc-nT-JJ4">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nxc-nT-JJ4">
                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="121"/>
                                                             <gestureRecognizers/>
                                                         </imageView>
@@ -82,10 +81,6 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="4fI-Ds-fJc" id="1NT-05-9n8"/>
-                                    <outlet property="delegate" destination="4fI-Ds-fJc" id="xOZ-7i-ePB"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <constraints>
@@ -94,7 +89,6 @@
                             <constraint firstItem="Go6-of-wbd" firstAttribute="trailing" secondItem="aA6-Dd-VgQ" secondAttribute="trailing" id="a3k-Ck-Ope"/>
                             <constraint firstItem="Go6-of-wbd" firstAttribute="bottom" secondItem="aA6-Dd-VgQ" secondAttribute="bottom" id="mV2-RT-Ufj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HIu-fg-k94"/>
                     </view>
                     <navigationItem key="navigationItem" id="nRB-ma-eoD"/>
                     <connections>
@@ -154,7 +148,6 @@
                             <constraint firstItem="OoQ-Rw-EXz" firstAttribute="height" relation="lessThanOrEqual" secondItem="gMO-JY-dJP" secondAttribute="height" multiplier="0.4" id="tAv-BP-nyw"/>
                             <constraint firstItem="OoQ-Rw-EXz" firstAttribute="top" secondItem="gMO-JY-dJP" secondAttribute="top" constant="20" id="zhQ-cd-m0X"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8nX-ki-kkd"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="5ob-uu-WE0"/>
